@@ -1,0 +1,77 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Convert to JSON</title>
+  </head>
+
+  <body>
+    <h1>Convert to JSON</h1>
+
+    <form id="dataForm">
+      <label for="sourceTrackingId">Source Tracking ID:</label>
+
+      <input
+        type="text"
+        id="sourceTrackingId"
+        name="sourceTrackingId"
+      /><br /><br />
+
+      <label for="notificationName">Notification Name:</label>
+
+      <input
+        type="text"
+        id="notificationName"
+        name="notificationName"
+      /><br /><br />
+
+      <label for="bank_id">Bank ID:</label>
+
+      <input type="text" id="bank_id" name="bank_id" /><br /><br />
+
+      <label for="bank_user_id">Bank User ID:</label>
+
+      <input type="text" id="bank_user_id" name="bank_user_id" /><br /><br />
+
+      <label for="registrationCode">Registration Code:</label>
+
+      <input
+        type="text"
+        id="registrationCode"
+        name="registrationCode"
+      /><br /><br />
+
+      <label for="language">Language:</label>
+
+      <input type="text" id="language" name="language" /><br /><br />
+
+      <label for="country">Country:</label>
+
+      <input type="text" id="country" name="country" /><br /><br />
+
+      <label for="emailId">Email ID:</label>
+
+      <input type="text" id="emailId" name="emailId" /><br /><br />
+
+      <label for="federatedUserId">Federated User ID:</label>
+
+      <input
+        type="text"
+        id="federatedUserId"
+        name="federatedUserId"
+      /><br /><br />
+
+      <button type="button" onclick="convertToJSON()">Convert to JSON</button>
+    </form>
+
+    <h2>JSON Output:</h2>
+
+    <pre id="jsonOutput"></pre>
+
+    <script src="script.js"></script>
+  </body>
+</html>
